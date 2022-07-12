@@ -1,0 +1,16 @@
+{
+  "name": "sprint_1",
+  "version": "1.0.0",
+  "description": "Sprint #1 create example pages for App - Chat Messages",
+  "source": "index.hbs",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "parcel": "^2.6.2"
+  }
+}
