@@ -2,15 +2,37 @@
   "name": "sprint_1",
   "version": "1.0.0",
   "description": "Sprint #1 create example pages for App - Chat Messages",
-  "source": "index.hbs",
+  "source": "src/index.pug",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "start1": "parcel ./src/pages/contact.hbs --no-cache",
+    "build": "parcel build src/index.pug",
+    "startPUG": "parcel src/index.pug --open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.6.2"
+    "@parcel/transformer-inline-string": "^2.6.2",
+    "@parcel/transformer-pug": "^2.6.2",
+    "@parcel/transformer-sass": "^2.6.2",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.6.2",
+    "parcel-transformer-hbs": "^1.0.4",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "templator": "^1.1.0",
+    "util": "^0.12.4"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.19",
+    "pug": "^3.0.2"
   }
 }
