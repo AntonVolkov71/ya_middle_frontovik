@@ -5,7 +5,7 @@
   "source": "src/templates/index.pug",
   "scripts": {
     "start": "parcel",
-    "start1": "parcel ./src/pages/contact.hbs --no-cache",
+    "start1": "parcel  --no-cache",
     "build": "parcel build src/templates/index.pug --public-url ./",
     "startPUG": "parcel src/templates/index.pug --open",
     "dev": "nodemon ./src/app.js"
