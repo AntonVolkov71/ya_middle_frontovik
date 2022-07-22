@@ -2,12 +2,13 @@
   "name": "sprint_1",
   "version": "1.0.0",
   "description": "Sprint #1 create example pages for App - Chat Messages",
-  "source": "src/index.pug",
+  "source": "src/templates/index.pug",
   "scripts": {
     "start": "parcel",
     "start1": "parcel ./src/pages/contact.hbs --no-cache",
-    "build": "parcel build src/index.pug",
-    "startPUG": "parcel src/index.pug --open"
+    "build": "parcel build src/templates/index.pug --public-url ./",
+    "startPUG": "parcel src/templates/index.pug --open",
+    "dev": "nodemon ./src/app.js"
   },
   "author": "",
   "license": "ISC",
