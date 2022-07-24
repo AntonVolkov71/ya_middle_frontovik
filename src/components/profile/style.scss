@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+
+  .profile__image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile__data {
+    min-width: 500px;
+
+    .profile__field {
+      margin: 10px auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 1px solid $colorSecondary;
+    }
+
+    .profile__button-save {
+      width: 100%;
+    }
+  }
+
+  .profile__change-data, .profile__change-password {
+    min-width: 500px;
+    color: $colorInfo;
+
+    border-bottom: 1px solid $colorSecondary;
+
+  }
+}

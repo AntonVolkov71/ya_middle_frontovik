@@ -1,0 +1,19 @@
+<div class="main">
+    <section
+
+        class="main__list-chats  {{#if isOpenProfile}}main__list-chats_close {{/if}}">
+
+        {{{openProfile}}}
+        {{{searchChat}}}
+        {{{listChats}}}
+    </section>
+    <section class="main__content ">
+        {{#if activeChat}}
+            {{{activeChat}}}
+        {{else if profile}}
+            {{{profile}}}
+        {{else}}
+            {{> emptyChat}}
+        {{/if}}
+    </section>
+</div>

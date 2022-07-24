@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+
+  background-color: $mainBackColor;
+  height: 100%;
+
+  .main__list-chats {
+    background: $colorLight;
+    border-right: 1px solid $colorInfo;
+    padding: $containerPadding;
+
+    flex-grow: 1;
+    max-width: 25%;
+  }
+
+  .main__list-chats_close {
+    max-width: 15px;
+  }
+
+  .main__content {
+    background: $colorPsheek;
+
+    flex-grow: 3;
+  }
+}

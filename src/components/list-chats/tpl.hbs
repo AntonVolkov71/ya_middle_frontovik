@@ -1,0 +1,5 @@
+<div class="listChats scroll ">
+    {{#each chats}}
+       {{> chat name=this.name message=this.dataLastMessage avatar=avatar }}
+    {{/each}}
+</div>

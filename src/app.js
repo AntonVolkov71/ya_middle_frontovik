@@ -1,21 +1,13 @@
-const express = require('express')
-const path = require(`path`);
+const express = require('express');
 
-const myRoutes = require(`./main_router`);
+const path = require('path');
 
-const DEFAULT_PORT = 8080;
-const PUBLIC_DIR = `dist`;
+const DEFAULT_PORT = 3333;
+const STATIC_DIR = path.resolve('dist/');
 
 const app = express();
+app.use(express.static(STATIC_DIR));
 
-// app.set(`views`, path.resolve(__dirname, `templates`));
-app.use('/', myRoutes)
-
-// app.set(`view engine`, `pug`);
-
-app.use(express.static(path.resolve(__dirname, PUBLIC_DIR)));
-
-
-app.listen(DEFAULT_PORT, ()=>{
-    console.log(`App start on PORT ${DEFAULT_PORT}`)
-})
+app.listen(DEFAULT_PORT, () => {
+  console.info(`App start on PORT ${DEFAULT_PORT}`);
+});
