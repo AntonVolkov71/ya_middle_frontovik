@@ -5,6 +5,11 @@
 
 body {
   font-family: "Roboto", "Arial", sans-serif;
+  height: 109px;
+
+  #root {
+    height: 100%;
+  }
 }
 
 .scroll {

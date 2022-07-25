@@ -1,16 +1,13 @@
 import {localePaths} from "../assets/constants";
 import emptyLayout from '../layouts/empty';
 import mainLayout from '../layouts/main';
+import render from "./render";
 
 const {pathname} = window.location;
 const $root = document.getElementById('root');
 
-function render(root, layout, element) {
-    root.innerHTML = layout({content: element})
-}
-
 function processingRouting(pages) {
-    const {main, auth, login} = pages;
+    const {main, auth, login, notFound} = pages;
 
     switch (pathname) {
         case localePaths.login:
@@ -22,8 +19,12 @@ function processingRouting(pages) {
         case localePaths.main:
             render($root, mainLayout, main);
             break;
+        case localePaths.empty:
+            render($root, emptyLayout, login);
+            break;
         default:
-            console.log('default');
+            render($root, emptyLayout, notFound)
+            break;
     }
 }
 
