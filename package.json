@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Sprint #1 create example pages for App - Chat Messages",
   "source": "src/index.html",
+  "type": "module",
   "scripts": {
     "start": "parcel src/index.html --no-source-maps --target default --dist-dir ./build",
     "start1": "parcel src/index.html --no-source-maps",
