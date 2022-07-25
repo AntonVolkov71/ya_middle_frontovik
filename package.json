@@ -1,7 +1,8 @@
 {
-  "name": "sprint_1",
+  "name": "messanger",
   "version": "1.0.0",
   "description": "Sprint #1 create example pages for App - Chat Messages",
+  "default": "src/index.html",
   "source": "src/index.html",
   "type": "module",
   "scripts": {
@@ -26,6 +27,11 @@
     "parcel-transformer-hbs": "^1.0.4"
   },
   "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./",
+      "distDir": "dist"
+    },
     "default": {
       "sourceMap": false
     }
