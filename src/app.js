@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
 
-const path = require('path');
+import path from 'path';
 
 const DEFAULT_PORT = 3333;
 const STATIC_DIR = path.resolve('dist/');
