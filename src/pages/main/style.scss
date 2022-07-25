@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: stretch;
 
-
   background-color: $mainBackColor;
   height: 100%;
 
@@ -18,12 +17,23 @@
     max-width: 25%;
   }
 
+  $heightRowMain: 50px;
+
+  .main__wrapper-search, .main__wrapper-search {
+    max-height: $heightRowMain;
+  }
+
+  .main__wrapper-listChats {
+    max-height: 900px;
+  }
+
   .main__list-chats_close {
     max-width: 15px;
   }
 
   .main__content {
     background: $colorPsheek;
+    height: 100vh;
 
     flex-grow: 3;
   }
